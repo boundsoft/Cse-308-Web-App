@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:dt="http://java.sun.com/jsf/composite/components"
+                template="./template1.xhtml">
+    
+    <ui:define name="mainContent">
+        <h2>Draft</h2>
+        <ul id="games">
+                <li>
+                        <h3 class="fancy">Position drafting</h3>
+                        <h5>QB</h5>
+                </li>
+                <li>
+                        <h3 class="fancy">Players</h3>
+                        Search for player: <input type="leaguename" value="Manning"></input><input type="submit" value="Search"></input>
+                        <div class="lightBox"> <a href="images/rodgers.png"><p>Eli Manning<br/>
+                        Peyton Manning</p></a></div>
+                </li>
+        </ul>
+    </ui:define>
+    
+    <ui:define name="secondaryContent">
+        <h3>Teams</h3>
+        <h5>Freeman's Mind</h5>
+        <h5>Unforseen Consequences</h5>
+        <h5>Meatshields</h5>
+        <h5>Army Strong</h5>
+        <h5>Jump Masters</h5>
+        <h5>Bang bang...bang BANG</h5>
+    </ui:define>
+    
+</ui:composition>

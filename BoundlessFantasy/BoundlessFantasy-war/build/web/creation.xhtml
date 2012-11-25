@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:dt="http://java.sun.com/jsf/composite/components"
+                template="./template2.xhtml">
+    
+    <ui:define name="mainContent">
+        <h2>Create League</h2>
+        <div class="inset">
+                <h4 class="fancy">Houndeye Kickers</h4>
+                <form action="demo_form.asp">
+                        League name: <input type="text" name="leaguename" value="Houndeye Kickers"></input><input type="submit" value="Rename"></input>
+                </form>
+                <h4 class="fancy">Your team name</h4>
+                <input type="text" name="leaguename" value="Freeman's Mind"></input><input type="submit" value="Submit"></input>
+                <h5>1. Freeman's Mind</h5>
+                <h4 class="fancy">Teams Invited</h4>
+                <form action="demo_form.asp">
+                        Invite team: <input type="text" name="leaguename" value="Godzilla's finger"></input><input type="submit" value="Add team"></input><br></br>
+                </form>
+                <h5>1. Captain Freeman of the Intergalactic House of Pancakes</h5>
+                <a href="creation.xhtml">Remove</a>
+                <h5>2. Voodoo Twin Master</h5>
+                <a href="creation.xhtml">Remove</a>
+                <h5>3. Fail-Pirate security guard</h5>
+                <a href="creation.xhtml">Remove</a>
+                <h5>4. Meathead who doesn't understand the meaning of the word "civilian"</h5>
+                <a href="creation.xhtml">Remove</a>
+                <h5>5. Jackie Chan</h5>
+                <a href="creation.xhtml">Remove<br/></a>
+                <input type="submit" value="Submit"></input><input type="submit" value="Cancel"></input>
+                
+                
+<h:form> 
+   <h:panelGrid> 
+      <h:inputText value="#{bean.text}" > 
+         <f:ajax event="keyup"/> 
+      </h:inputText> 
+      <h:outputText id="text" value="#{bean.text}" /> 
+   </h:panelGrid> 
+</h:form>
+                
+                
+                
+        </div>
+    </ui:define>
+    
+</ui:composition>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="#{localeBean.language}"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+    
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <ui:insert name="htmlHead" />
+    </h:head>
+    
+    <h:body>
+        <h:form>
+            <h:outputStylesheet name="style.css" library="css" />
+            <h:outputStylesheet name="index.css" library="css" />
+            <h:outputScript name="addTemplate.js" library="js" />
+        </h:form>
+        
+        <div id="top" class="top">
+            <div id="heading">
+            <div id="logo"> 
+                <h1 class="site-title"><ui:insert name="title">Boundless Fantasy</ui:insert></h1>
+            </div>
+
+            <ul id="menu">
+                <li><a href="index1.xhtml">Home</a></li>
+            <li>League
+                <ul>
+                        <li>
+                                <a href="team.xhtml"> Dignitas </a>
+                        </li>
+                    <li>
+                        <a href="schedule.xhtml"> Schedule </a>
+                        </li>
+                        <li>
+                        <a href="history.xhtml"> History </a>
+                        </li>
+                        <li>
+                        <a href="league.xhtml"> Overview </a>
+                        </li>
+                </ul>
+            </li>
+            <li>Players
+                <ul>
+                    <li>
+                        <a href="adddroptrade.xhtml"> Add/Drop/Trade </a>
+                        </li>
+                </ul>
+            </li>
+            <li><a href="notifications.xhtml">Notifications</a>
+                        <ul>
+                                <li>
+                                        <a href="adddroptrade.xhtml"> Invictus Gaming wants to trade. </a>
+                                </li>
+                                <li>
+                                        <a href="invitations.xhtml"> You have been invited to<br/> OhSayCanYouSeawolves </a>
+                                </li>
+                        </ul>
+                </li>
+            <li>Account
+                <ul>
+                        <li>
+                                <h:graphicImage name="avatar-1.png" library="images" alt="Gordon Fearman"/>
+                        </li>
+                        <li>
+                                <h5> <i>Gordon Fearman</i> </h5>
+                        </li>
+                        <li>
+                                <a href="index.xhtml"> Preferences </a>
+                        </li>
+                        <li>
+                                <a href="index.xhtml"> Log out </a>
+                        </li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+        
+        <div id="site">
+            <div id="left-col" class="col">
+                <ui:insert name="mainContent">
+                </ui:insert>
+            </div>
+            
+            <div id="right-col" class="col">
+                <ui:insert name="secondaryContent">
+                </ui:insert>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <p>
+                    <h:graphicImage name="NFL-logo.gif" library="images" alt="Please don't sue" /><br/>
+                    &#160;2012 Mitchell Wong. Website template by Steven Beller.<br/>
+                    Not for commercial use.<br/>
+                    All player likeness are the property of their respective owners. Team names, nicknames, logos, uniforms, and other indicia are
+                    trademarks of the teams indicated. The NFL, Super Bowl, Pro Bowl, and the NFL shield are registered trademarks of
+                    the National Football League.<br/>
+                    Boundless Fantasy is a common law trademark of Mitchell Wong.
+            </p>
+        </div>
+    </h:body>
+</html>

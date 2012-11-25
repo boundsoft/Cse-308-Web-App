@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="#{localeBean.language}"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+    
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <ui:insert name="htmlHead" />
+    </h:head>
+    
+    <h:body>
+         <h:form>
+            <h:outputStylesheet name="style.css" library="css" />
+            <h:outputStylesheet name="game.css" library="css" />
+        </h:form>
+        
+        <div id="top" class="top">
+            
+            <div id="heading">
+            <div id="logo"> 
+                <h1 class="site-title"><ui:insert name="title">Boundless Fantasy</ui:insert></h1>
+            </div>
+
+            <ul id="menu">
+                <li>Log in
+                    <ul>
+                        <li>User name: <input type="text" name="leaguename" value="Gordon Fearman"></input></li>
+                        <li>Password: <input type="text" name="leaguename" value="******"></input></li>
+                        <li><a href="index1.xhtml">Log in</a></li>
+                    </ul>
+                </li>
+                <li><a href="register.xhtml">Register</a></li>
+            </ul>
+            </div>
+        </div>
+        
+        <div id="site">
+            <div id="content" class="col">
+                <ui:insert name="mainContent">
+                </ui:insert>
+            </div>
+        </div>
+        
+         <div id="footer">
+	<p>
+		<h:graphicImage name="NFL-logo.gif" library="images" alt="Please don't sue" /><br/>
+		&#160;2012 Mitchell Wong. Website template by Steven Beller.<br/>
+		Not for commercial use.<br/>
+		All player likeness are the property of their respective owners. Team names, nicknames, logos, uniforms, and other indicia are
+		trademarks of the teams indicated. The NFL, Super Bowl, Pro Bowl, and the NFL shield are registered trademarks of
+		the National Football League.<br/>
+		Boundless Fantasy is a common law trademark of Mitchell Wong.
+        </p>
+        </div>
+    </h:body>
+</html>

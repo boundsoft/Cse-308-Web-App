@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:dt="http://java.sun.com/jsf/composite/components"
+                template="./template1.xhtml">
+    
+    <ui:define name="mainContent">
+        <h2>Notifications</h2>
+        <ul id="games">
+                <li>
+                        <h3 class="fancy">All notifications</h3>
+                        <h3 class="fancy">LoL Season 2</h3>
+                        <a href="adddroptrade.xhtml" class="inset"> <h5>Invictus Gaming wants to trade.</h5></a>
+                        <h3 class="fancy">OhSayCanYouSeawolves</h3>
+                </li>
+        </ul>
+    </ui:define>
+    
+    <ui:define name="secondaryContent">
+        <h3>Leagues</h3>
+        <a href="notifications_team.xhtml">
+        <h5><u>All Leagues</u></h5>
+        <h5>LoL Legends Season 2</h5>
+        <p>Dignitas</p>
+        <h5>OhSayCanYouSeawolves</h5>
+        <p>Blazing Saddles</p></a>
+    </ui:define>
+    
+</ui:composition>

@@ -1,0 +1,22 @@
+@charset "utf-8";
+.lightBox{
+	display:table;
+	color:#e9e1d4;
+	padding:10px;
+	margin-left:20px;
+	margin-right:10px;
+	background-color:#2A2A32;
+	border-radius:10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.lightBox  img{
+	float:left;
+	border:#6a696f 3px solid;
+	height:100px;
+	padding:0;
+	margin:3px;
+}
+.lightBox img:hover{
+	border-color:#FFD40E;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:dt="http://java.sun.com/jsf/composite/components"
+                template="./template1.xhtml">
+    
+    <ui:define name="mainContent">
+        <h2>Draft</h2>
+        <ul id="games">
+                <li>
+                        <h3 class="fancy">Players</h3>
+                        Search for player: <input type="leaguename" value="Manning"></input>
+                        <div class="lightBox"> <a href="#{resource['images:rodgers.png']}"><p><i>Eli Manning</i><br/></p></a></div>
+                        <p><a href="adddroptrade.html">Drop Trade</a><br/>
+                        <i>Peyton Manning</i><br/>
+                        <a href="adddroptrade.xhtml">Add Trade</a><br/></p>
+                </li>
+        </ul>
+    </ui:define>
+    
+    <ui:define name="secondaryContent">
+        <h3>Players</h3>
+        <a href="adddroptrade.xhtml">Aaron Rodgers<br/>
+        Ben Tate<br/>
+        Reggie Bush<br/>
+        Dez Bryant<br/>
+        Brandon Lloyd<br/>
+        Tony Gonzalez<br/>
+        Lance Moore<br/>
+        Stephen Gostkowski<br/>
+        New York Giants<br/>
+        Eli Manning<br/>
+        Isaac Redman<br/>
+        David Wilson<br/>
+        Greg Childs<br/>
+        Heath Miller<br/></a>
+    </ui:define>
+    
+</ui:composition>
