@@ -4,6 +4,7 @@
  */
 package boundless.ejb;
 
+import boundless.entities.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -27,8 +28,33 @@ import javax.ejb.LocalBean;
 @Singleton
 @LocalBean
 public class ConfigBean {
+    private static final Logger logger = Logger.getLogger(
+                "dukestutoring.ejb.ConfigBean");
+    
+    private CriteriaBuilder cb;
+    @PersistenceContext
+    private EntityManager em;
+    @EJB
+    private AdminBean adminBean;
+    @EJB
+    private RequestBean requestBean;
 
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
-
+    @PostConstruct
+    public void init() {
+        cb = em.getCriteriaBuilder();
+        
+        // create Matt
+        logger.info("Creating Matt entity");
+        
+        Account matt = new Account();
+        matt.setFirstname("Matt");
+        matt.setLastname("Krupin");
+        matt.setEmail("mjkupin@gmail.com");
+        matt.setUsername("boundsoft");
+        matt.setPassword("boundless");
+        
+        
+        logger.info("Calling createStudent() on Matt");
+        String result = adminBean.createAccount(matt);
+    }
 }
