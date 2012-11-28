@@ -12,16 +12,10 @@ and open the template in the editor.
                 template="./template3.xhtml">
     
     <ui:define name="mainContent">
-        <h2>Register</h2>
-        <form id="register">
-            <h:outputLabel value="User name: "/>
-            <h:inputText value="#{AccountsBean.userName}"/>
-            
-            <h:outputLabel value="Password: "/>
-            <h:inputText value="#{AccountsBean.password}"/>
-            
-            <h:commandButton action="#{AccountsBean.submitAccount}" value="Submit" />
-        </form>
+        <h:graphicImage name="football.jpg" library="images" alt="RUGBY!!!" />
+        <h2>News</h2>
+        <p>People through balls at each other.<br />Other people tackled people.<br />Someone was overcharged
+            for a hotdog.</p>
     </ui:define>
     
 </ui:composition>

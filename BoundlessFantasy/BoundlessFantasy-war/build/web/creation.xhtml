@@ -14,7 +14,21 @@ and open the template in the editor.
     <ui:define name="mainContent">
         <h2>Create League</h2>
         <div class="inset">
-                <h4 class="fancy">Houndeye Kickers</h4>
+            <h:form id="leagueName">
+                <h:outputLabel value="League name: " />
+                <h:inputText value="#{League.name}" />
+            </h:form>
+            <h4 class="fancy">Your team name</h4>
+            <h:form id="leagueAdmin">
+                <h:inputText value="#{League.admin}" />
+            </h:form>
+            <h4 class="fancy">Other teams</h4>
+            <h:form id="addTeams">
+                <h:inputText value="#{League.newTeam}" />
+                <h:commandButton value="Submit" action="#{League.addNewTeam}" />
+            </h:form>
+            
+            <!--    <h4 class="fancy">Houndeye Kickers</h4>
                 <form action="demo_form.asp">
                         League name: <input type="text" name="leaguename" value="Houndeye Kickers"></input><input type="submit" value="Rename"></input>
                 </form>
@@ -36,6 +50,8 @@ and open the template in the editor.
                 <h5>5. Jackie Chan</h5>
                 <a href="creation.xhtml">Remove<br/></a>
                 <input type="submit" value="Submit"></input><input type="submit" value="Cancel"></input>
+            
+            -->
                 
                 
 <h:form> 

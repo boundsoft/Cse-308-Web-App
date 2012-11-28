@@ -13,12 +13,15 @@ and open the template in the editor.
     
     <ui:define name="mainContent">
         <h2>Register</h2>
-        User name: <input type="text" name="leaguename" value="Gordon Fearman"></input><br />
-        Password: <input type="text" name="leaguename" value="******"></input><br />
-        Confirm password: <input type="text" name="leaguename" value="******"></input><br />
-        Email: <input type="text" name="leaguename" value="apophis42@gmail.com"></input><br />
-        SSN: <input type="text" name="leaguename" value="123456789"></input><br />
-        <input type="submit" value="Submit"></input>
+        <form id="register">
+            <h:outputLabel value="User name: "/>
+            <h:inputText value="#{AccountsBean.userName}"/>
+            
+            <h:outputLabel value="Password: "/>
+            <h:inputText value="#{AccountsBean.password}"/>
+            
+            <h:commandButton action="#{AccountsBean.submitAccount}" value="Submit" />
+        </form>
     </ui:define>
     
 </ui:composition>

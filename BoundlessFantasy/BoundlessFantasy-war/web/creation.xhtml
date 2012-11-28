@@ -22,6 +22,11 @@ and open the template in the editor.
             <h:form id="leagueAdmin">
                 <h:inputText value="#{League.admin}" />
             </h:form>
+            <h4 class="fancy">Other teams</h4>
+            <h:form id="addTeams">
+                <h:inputText value="#{League.newTeam}" />
+                <h:commandButton value="Submit" action="#{League.addNewTeam}" />
+            </h:form>
             
             <!--    <h4 class="fancy">Houndeye Kickers</h4>
                 <form action="demo_form.asp">

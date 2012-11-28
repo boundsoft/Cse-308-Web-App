@@ -4,18 +4,8 @@ To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
 <!DOCTYPE html>
-<ui:composition xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:h="http://java.sun.com/jsf/html"
-                xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:f="http://java.sun.com/jsf/core"
-                xmlns:dt="http://java.sun.com/jsf/composite/components"
-                template="./template3.xhtml">
-    
-    <ui:define name="mainContent">
-        <h:graphicImage name="football.jpg" library="images" alt="RUGBY!!!" />
-        <h2>News</h2>
-        <p>People through balls at each other.<br />Other people tackled people.<br />Someone was overcharged
-            for a hotdog.</p>
-    </ui:define>
-    
-</ui:composition>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <ui:include id="contentid" src="#{loginBean.contentPath}"></ui:include>
+</html>
