@@ -50,14 +50,6 @@ public class RequestBean {
     private void init() {
         cb = em.getCriteriaBuilder();
     }
-
-    public String logIn(Account acc) {
-        
-        return null;
-    }
+   
     
-    public String register(Account acc) {
-        
-        return null;
-    }
 }

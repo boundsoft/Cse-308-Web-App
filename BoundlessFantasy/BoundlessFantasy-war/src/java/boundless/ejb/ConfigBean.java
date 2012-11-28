@@ -26,10 +26,10 @@ import javax.ejb.LocalBean;
  * @author Matt
  */
 @Singleton
-@LocalBean
+@Startup
 public class ConfigBean {
     private static final Logger logger = Logger.getLogger(
-                "dukestutoring.ejb.ConfigBean");
+                "boundless.ejb.ConfigBean");
     
     private CriteriaBuilder cb;
     @PersistenceContext
