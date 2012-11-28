@@ -4,7 +4,8 @@
  */
 package boundless.managedbeans;
 
-import boundless.ejb;
+import java.util.*;
+import boundless.entities.*;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.inject.Named;

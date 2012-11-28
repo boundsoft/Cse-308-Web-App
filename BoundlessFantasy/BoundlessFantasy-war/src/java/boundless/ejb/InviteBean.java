@@ -4,6 +4,7 @@
  */
 package boundless.ejb;
 
+import boundless.entities.*;
 import javax.ejb.Singleton;
 import javax.ejb.LocalBean;
 
@@ -24,7 +25,7 @@ public class InviteBean {
      * @param league : The league the invitation is to
      * @param accept : Whether an invitaiton is accepted or rejected
      */
-    public void respondToInvite(User sender, League league, boolean accept) {
+    public void respondToInvite(Account sender, League league, boolean accept) {
         
     }
     
@@ -34,7 +35,7 @@ public class InviteBean {
      * @param email : The email to which the invitaion was sent.
      * @param league : The league to which the email address owner was invited
      */
-    public void cancelEmailInvite(User sender, String email, League league) {
+    public void cancelEmailInvite(Account sender, String email, League league) {
         
     }
     
@@ -44,7 +45,7 @@ public class InviteBean {
      * @param invitee : The invited user
      * @param league  : The league to which they were invited
      */
-    public void cancelUserInvite(User sender, User invitee, League league) {
+    public void cancelUserInvite(Account sender, Account invitee, League league) {
         
     }
     
@@ -54,7 +55,7 @@ public class InviteBean {
      * @param email : The email to send it to
      * @param league : The league to invite the email address to
      */
-    public void inviteEmail(User sender, String email, League league) {
+    public void inviteEmail(Account sender, String email, League league) {
         
     }
     
@@ -64,7 +65,7 @@ public class InviteBean {
      * @param invitee : The user who is invited
      * @param league  : The league they are invited to
      */
-    public void inviteUser(User sender, User invitee, League league) {
+    public void inviteUser(Account sender, Account invitee, League league) {
         
     }
 }

@@ -4,6 +4,7 @@
  */
 package boundless.ejb;
 
+import boundless.entities.*;
 import javax.ejb.Stateful;
 import javax.ejb.LocalBean;
 
@@ -15,7 +16,7 @@ import javax.ejb.LocalBean;
 @LocalBean
 public class NavigationBean {
 
-    User curuser;
+    Account curuser;
     
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
