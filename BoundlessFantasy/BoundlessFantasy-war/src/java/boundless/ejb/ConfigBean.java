@@ -5,6 +5,7 @@
 package boundless.ejb;
 
 import boundless.entities.*;
+import boundless.test.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -27,9 +28,10 @@ import javax.ejb.LocalBean;
  */
 @Singleton
 @Startup
+@LocalBean
 public class ConfigBean {
     private static final Logger logger = Logger.getLogger(
-                "boundless.ejb.ConfigBean");
+                "dukestutoring.ejb.ConfigBean");
     
     private CriteriaBuilder cb;
     @PersistenceContext
@@ -53,6 +55,7 @@ public class ConfigBean {
         matt.setUsername("boundsoft");
         matt.setPassword("boundless");
         
+        //DraftTester.start(requestBean);
         
         logger.info("Calling createStudent() on Matt");
         String result = adminBean.createAccount(matt);

@@ -26,34 +26,29 @@ import javax.xml.bind.annotation.XmlRootElement;
 @NamedQueries({
     @NamedQuery(name = "Player.findAll", query = "SELECT p FROM Player p"),
     @NamedQuery(name = "Player.findById", query = "SELECT p FROM Player p WHERE p.id = :id"),
-    @NamedQuery(name = "Player.findByTeam", query = "SELECT p FROM Player p WHERE p.team = :team"),
+    @NamedQuery(name = "Player.findByName", query = "SELECT p FROM Player p WHERE p.name = :name"),
     @NamedQuery(name = "Player.findByInjured", query = "SELECT p FROM Player p WHERE p.injured = :injured"),
-    @NamedQuery(name = "Player.findByRole", query = "SELECT p FROM Player p WHERE p.role = :role"),
-    @NamedQuery(name = "Player.findByName", query = "SELECT p FROM Player p WHERE p.name = :name")})
+    @NamedQuery(name = "Player.findByPlayPosition", query = "SELECT p FROM Player p WHERE p.playPosition = :playPosition")})
 public class Player implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
     @NotNull
     @Column(name = "ID")
-    private Integer id;
+    protected Integer id;
     @Basic(optional = false)
     @NotNull
-    @Column(name = "TEAM")
-    private int team;
+    @Size(min = 1, max = 80)
+    @Column(name = "NAME")
+    private String name;
     @Basic(optional = false)
     @NotNull
     @Column(name = "INJURED")
     private short injured;
     @Basic(optional = false)
     @NotNull
-    @Column(name = "ROLE")
-    private int role;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 80)
-    @Column(name = "NAME")
-    private String name;
+    @Column(name = "PLAY_POSITION")
+    private int playPosition;
 
     public Player() {
     }
@@ -62,12 +57,11 @@ public class Player implements Serializable {
         this.id = id;
     }
 
-    public Player(Integer id, int team, short injured, int role, String name) {
+    public Player(Integer id, String name, short injured, int playPosition) {
         this.id = id;
-        this.team = team;
-        this.injured = injured;
-        this.role = role;
         this.name = name;
+        this.injured = injured;
+        this.playPosition = playPosition;
     }
 
     public Integer getId() {
@@ -78,12 +72,12 @@ public class Player implements Serializable {
         this.id = id;
     }
 
-    public int getTeam() {
-        return team;
+    public String getName() {
+        return name;
     }
 
-    public void setTeam(int team) {
-        this.team = team;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public short getInjured() {
@@ -94,20 +88,12 @@ public class Player implements Serializable {
         this.injured = injured;
     }
 
-    public int getRole() {
-        return role;
+    public int getPlayPosition() {
+        return playPosition;
     }
 
-    public void setRole(int role) {
-        this.role = role;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setPlayPosition(int playPosition) {
+        this.playPosition = playPosition;
     }
 
     @Override

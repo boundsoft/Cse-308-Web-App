@@ -4,6 +4,8 @@
  */
 package boundless.entities;
 
+import boundless.ejb.*;
+import javax.ejb.*;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -44,7 +46,10 @@ public class League implements Serializable {
     @Size(min = 1, max = 50)
     @Column(name = "NAME")
     private String name;
-
+    
+/*    @EJB
+    private RequestBean dbAcces;
+*/
     public League() {
     }
 

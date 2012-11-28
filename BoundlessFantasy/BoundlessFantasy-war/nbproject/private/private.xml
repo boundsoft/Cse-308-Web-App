@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/web/WEB-INF/web.xml</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/ejb/NavigationBean.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/managedbeans/RosterBean.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/managedbeans/LeagueBean.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/managedbeans/DraftBean.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/League.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/ejb/ConfigBean.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/ejb/InviteBean.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/ejb/RequestBean.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/Account.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/Team.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/PlayerAssignment.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/PlayerAssignmentPK.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/conf/persistence.xml</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/Player.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/nbproject/build-impl.xml</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/PlayPosition.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/scheduler/Scheduler.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/scheduler/Pair.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/scheduler/ScheduleTester.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/Numteamsperleague.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/scheduler/TeamPair.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/entities/GameHistory.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/test/DraftTester.java</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/web/WEB-INF/beans.xml</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/web/WEB-INF/glassfish-web.xml</file>
+        <file>file:/Users/hendrikdekock/Cse-308-Web-App/BoundlessFantasy/BoundlessFantasy-war/src/java/boundless/ejb/AdminBean.java</file>
+    </open-files>
 </project-private>

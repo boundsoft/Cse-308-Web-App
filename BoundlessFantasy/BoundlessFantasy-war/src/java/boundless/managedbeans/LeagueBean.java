@@ -29,7 +29,7 @@ public class LeagueBean {
      * Sends a notification to the user that they must create a team in this league
      * @param u : The user to accept.
      */
-    public void acceptJoinRequest(User u) {
+    public void acceptJoinRequest(Account u) {
         
     }
     
@@ -37,7 +37,7 @@ public class LeagueBean {
      * Removes a request from User u to join this league from the table
      * @param u : The user to decline
      */
-    public void declineJoinRequest(User u) {
+    public void declineJoinRequest(Account u) {
         
     }
     
@@ -56,7 +56,7 @@ public class LeagueBean {
      * Invites a user with an account given its account entity.
      * @param u : The user to send an invitation to
      */
-    public void inviteByAccout(User u) {
+    public void inviteByAccout(Account u) {
         
     }
     
